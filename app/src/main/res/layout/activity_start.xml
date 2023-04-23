@@ -8,6 +8,7 @@
     android:parentActivityName=".MainActivity"
     tools:context=".StartActivity">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -33,8 +34,9 @@
         android:layout_marginTop="48dp"
         android:text="@string/status"
         android:textAlignment="center"
-        android:textColor="#C2ADE6"
-        android:textSize="24sp"
+        android:textColor="#B08FEA"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +65,16 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView">
 
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/laView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_rawRes="@raw/win"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            app:lottie_repeatCount="10"-->
+<!--            app:lottie_repeatMode="restart"-->
+<!--            tools:ignore="MissingConstraints" />-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -184,6 +196,7 @@
         android:background="@drawable/gradient"
         android:onClick="gameReset"
         android:text="@string/restart"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
